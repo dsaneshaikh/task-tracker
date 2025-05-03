@@ -15,9 +15,11 @@ const app = express();
 // CORS: allow only your frontend
 app.use(
   cors({
-    origin: process.env.FRONTEND_URL || "http://localhost:5173",
+    origin: [
+      "http://localhost:5173",
+      "https://task-tracker-qzlxrvb87-dsaneshaikhs-projects.vercel.app",
+    ],
     credentials: true,
-    allowedHeaders: ["Content-Type", "Authorization"],
   })
 );
 

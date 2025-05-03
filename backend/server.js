@@ -17,8 +17,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "https://task-tracker-qzlxrvb87-dsaneshaikhs-projects.vercel.app",
-      "task-tracker-ruby-kappa.vercel.app",
+      "https://task-tracker-ruby-kappa.vercel.app",
     ],
     credentials: true,
   })
